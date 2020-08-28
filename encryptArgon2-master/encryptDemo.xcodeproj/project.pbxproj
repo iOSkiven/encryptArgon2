@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7354D55624F793F7009F16E6 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 7354D54624F793F7009F16E6 /* thread.c */; };
+		7354D55724F793F7009F16E6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7354D54924F793F7009F16E6 /* LICENSE */; };
+		7354D55824F793F7009F16E6 /* ref.c in Sources */ = {isa = PBXBuildFile; fileRef = 7354D54A24F793F7009F16E6 /* ref.c */; };
+		7354D55924F793F7009F16E6 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 7354D54E24F793F7009F16E6 /* core.c */; };
+		7354D55A24F793F7009F16E6 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = 7354D55124F793F7009F16E6 /* blake2b.c */; };
+		7354D55B24F793F7009F16E6 /* argon2.c in Sources */ = {isa = PBXBuildFile; fileRef = 7354D55324F793F7009F16E6 /* argon2.c */; };
+		7354D55C24F793F7009F16E6 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = 7354D55524F793F7009F16E6 /* encoding.c */; };
+		7354D58424F89CE9009F16E6 /* EncryptArgon2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7354D58124F89CE9009F16E6 /* EncryptArgon2.m */; };
+		7354D58524F89CE9009F16E6 /* EncryptAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 7354D58224F89CE9009F16E6 /* EncryptAES.m */; };
+		7355D88F24DA52E300233B75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7355D88E24DA52E300233B75 /* AppDelegate.m */; };
+		7355D89224DA52E300233B75 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7355D89124DA52E300233B75 /* SceneDelegate.m */; };
+		7355D89524DA52E300233B75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7355D89424DA52E300233B75 /* ViewController.m */; };
+		7355D89824DA52E300233B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7355D89624DA52E300233B75 /* Main.storyboard */; };
+		7355D89A24DA52E800233B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7355D89924DA52E800233B75 /* Assets.xcassets */; };
+		7355D89D24DA52E800233B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7355D89B24DA52E800233B75 /* LaunchScreen.storyboard */; };
+		7355D8A024DA52E800233B75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7355D89F24DA52E800233B75 /* main.m */; };
+		7355D8AA24DA52E800233B75 /* encryptDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7355D8A924DA52E800233B75 /* encryptDemoTests.m */; };
+		7355D8B524DA52E800233B75 /* encryptDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7355D8B424DA52E800233B75 /* encryptDemoUITests.m */; };
+		7355D8CB24DA595400233B75 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7355D8C924DA595400233B75 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7355D8A624DA52E800233B75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7355D88224DA52E300233B75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7355D88924DA52E300233B75;
+			remoteInfo = encryptDemo;
+		};
+		7355D8B124DA52E800233B75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7355D88224DA52E300233B75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7355D88924DA52E300233B75;
+			remoteInfo = encryptDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7354D54624F793F7009F16E6 /* thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread.c; sourceTree = "<group>"; };
+		7354D54724F793F7009F16E6 /* blamka-round-ref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "blamka-round-ref.h"; sourceTree = "<group>"; };
+		7354D54824F793F7009F16E6 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		7354D54924F793F7009F16E6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7354D54A24F793F7009F16E6 /* ref.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ref.c; sourceTree = "<group>"; };
+		7354D54B24F793F7009F16E6 /* argon2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = argon2.h; sourceTree = "<group>"; };
+		7354D54C24F793F7009F16E6 /* blamka-round-opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "blamka-round-opt.h"; sourceTree = "<group>"; };
+		7354D54D24F793F7009F16E6 /* encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encoding.h; sourceTree = "<group>"; };
+		7354D54E24F793F7009F16E6 /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
+		7354D54F24F793F7009F16E6 /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		7354D55024F793F7009F16E6 /* blake2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blake2.h; sourceTree = "<group>"; };
+		7354D55124F793F7009F16E6 /* blake2b.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blake2b.c; sourceTree = "<group>"; };
+		7354D55224F793F7009F16E6 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		7354D55324F793F7009F16E6 /* argon2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = argon2.c; sourceTree = "<group>"; };
+		7354D55424F793F7009F16E6 /* blake2-impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "blake2-impl.h"; sourceTree = "<group>"; };
+		7354D55524F793F7009F16E6 /* encoding.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encoding.c; sourceTree = "<group>"; };
+		7354D58024F89CE9009F16E6 /* EncryptAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptAES.h; sourceTree = "<group>"; };
+		7354D58124F89CE9009F16E6 /* EncryptArgon2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptArgon2.m; sourceTree = "<group>"; };
+		7354D58224F89CE9009F16E6 /* EncryptAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptAES.m; sourceTree = "<group>"; };
+		7354D58324F89CE9009F16E6 /* EncryptArgon2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptArgon2.h; sourceTree = "<group>"; };
+		7355D88A24DA52E300233B75 /* encryptDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = encryptDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7355D88D24DA52E300233B75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7355D88E24DA52E300233B75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7355D89024DA52E300233B75 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		7355D89124DA52E300233B75 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		7355D89324DA52E300233B75 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7355D89424DA52E300233B75 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7355D89724DA52E300233B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7355D89924DA52E800233B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7355D89C24DA52E800233B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7355D89E24DA52E800233B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7355D89F24DA52E800233B75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7355D8A524DA52E800233B75 /* encryptDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = encryptDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7355D8A924DA52E800233B75 /* encryptDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = encryptDemoTests.m; sourceTree = "<group>"; };
+		7355D8AB24DA52E800233B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7355D8B024DA52E800233B75 /* encryptDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = encryptDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7355D8B424DA52E800233B75 /* encryptDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = encryptDemoUITests.m; sourceTree = "<group>"; };
+		7355D8B624DA52E800233B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7355D8C624DA595400233B75 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		7355D8C824DA595400233B75 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		7355D8C924DA595400233B75 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7355D88724DA52E300233B75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7355D8A224DA52E800233B75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7355D8AD24DA52E800233B75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7354D54524F793F7009F16E6 /* Argon2 */ = {
+			isa = PBXGroup;
+			children = (
+				7354D54624F793F7009F16E6 /* thread.c */,
+				7354D54724F793F7009F16E6 /* blamka-round-ref.h */,
+				7354D54824F793F7009F16E6 /* core.h */,
+				7354D54924F793F7009F16E6 /* LICENSE */,
+				7354D54A24F793F7009F16E6 /* ref.c */,
+				7354D54B24F793F7009F16E6 /* argon2.h */,
+				7354D54C24F793F7009F16E6 /* blamka-round-opt.h */,
+				7354D54D24F793F7009F16E6 /* encoding.h */,
+				7354D54E24F793F7009F16E6 /* core.c */,
+				7354D54F24F793F7009F16E6 /* thread.h */,
+				7354D55024F793F7009F16E6 /* blake2.h */,
+				7354D55124F793F7009F16E6 /* blake2b.c */,
+				7354D55224F793F7009F16E6 /* module.modulemap */,
+				7354D55324F793F7009F16E6 /* argon2.c */,
+				7354D55424F793F7009F16E6 /* blake2-impl.h */,
+				7354D55524F793F7009F16E6 /* encoding.c */,
+			);
+			path = Argon2;
+			sourceTree = "<group>";
+		};
+		7354D57F24F89CE9009F16E6 /* encryptClass */ = {
+			isa = PBXGroup;
+			children = (
+				7354D58024F89CE9009F16E6 /* EncryptAES.h */,
+				7354D58124F89CE9009F16E6 /* EncryptArgon2.m */,
+				7354D58224F89CE9009F16E6 /* EncryptAES.m */,
+				7354D58324F89CE9009F16E6 /* EncryptArgon2.h */,
+			);
+			path = encryptClass;
+			sourceTree = SOURCE_ROOT;
+		};
+		7355D88124DA52E300233B75 = {
+			isa = PBXGroup;
+			children = (
+				7355D88C24DA52E300233B75 /* encryptDemo */,
+				7355D8A824DA52E800233B75 /* encryptDemoTests */,
+				7355D8B324DA52E800233B75 /* encryptDemoUITests */,
+				7355D88B24DA52E300233B75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7355D88B24DA52E300233B75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7355D88A24DA52E300233B75 /* encryptDemo.app */,
+				7355D8A524DA52E800233B75 /* encryptDemoTests.xctest */,
+				7355D8B024DA52E800233B75 /* encryptDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7355D88C24DA52E300233B75 /* encryptDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7354D57F24F89CE9009F16E6 /* encryptClass */,
+				7354D54524F793F7009F16E6 /* Argon2 */,
+				7355D8C524DA595400233B75 /* GTMBase64 */,
+				7355D88D24DA52E300233B75 /* AppDelegate.h */,
+				7355D88E24DA52E300233B75 /* AppDelegate.m */,
+				7355D89024DA52E300233B75 /* SceneDelegate.h */,
+				7355D89124DA52E300233B75 /* SceneDelegate.m */,
+				7355D89324DA52E300233B75 /* ViewController.h */,
+				7355D89424DA52E300233B75 /* ViewController.m */,
+				7355D89624DA52E300233B75 /* Main.storyboard */,
+				7355D89924DA52E800233B75 /* Assets.xcassets */,
+				7355D89B24DA52E800233B75 /* LaunchScreen.storyboard */,
+				7355D89E24DA52E800233B75 /* Info.plist */,
+				7355D89F24DA52E800233B75 /* main.m */,
+			);
+			path = encryptDemo;
+			sourceTree = "<group>";
+		};
+		7355D8A824DA52E800233B75 /* encryptDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7355D8A924DA52E800233B75 /* encryptDemoTests.m */,
+				7355D8AB24DA52E800233B75 /* Info.plist */,
+			);
+			path = encryptDemoTests;
+			sourceTree = "<group>";
+		};
+		7355D8B324DA52E800233B75 /* encryptDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7355D8B424DA52E800233B75 /* encryptDemoUITests.m */,
+				7355D8B624DA52E800233B75 /* Info.plist */,
+			);
+			path = encryptDemoUITests;
+			sourceTree = "<group>";
+		};
+		7355D8C524DA595400233B75 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				7355D8C824DA595400233B75 /* GTMDefines.h */,
+				7355D8C624DA595400233B75 /* GTMBase64.h */,
+				7355D8C924DA595400233B75 /* GTMBase64.m */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7355D88924DA52E300233B75 /* encryptDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7355D8B924DA52E800233B75 /* Build configuration list for PBXNativeTarget "encryptDemo" */;
+			buildPhases = (
+				7355D88624DA52E300233B75 /* Sources */,
+				7355D88724DA52E300233B75 /* Frameworks */,
+				7355D88824DA52E300233B75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = encryptDemo;
+			productName = encryptDemo;
+			productReference = 7355D88A24DA52E300233B75 /* encryptDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7355D8A424DA52E800233B75 /* encryptDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7355D8BC24DA52E800233B75 /* Build configuration list for PBXNativeTarget "encryptDemoTests" */;
+			buildPhases = (
+				7355D8A124DA52E800233B75 /* Sources */,
+				7355D8A224DA52E800233B75 /* Frameworks */,
+				7355D8A324DA52E800233B75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7355D8A724DA52E800233B75 /* PBXTargetDependency */,
+			);
+			name = encryptDemoTests;
+			productName = encryptDemoTests;
+			productReference = 7355D8A524DA52E800233B75 /* encryptDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7355D8AF24DA52E800233B75 /* encryptDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7355D8BF24DA52E800233B75 /* Build configuration list for PBXNativeTarget "encryptDemoUITests" */;
+			buildPhases = (
+				7355D8AC24DA52E800233B75 /* Sources */,
+				7355D8AD24DA52E800233B75 /* Frameworks */,
+				7355D8AE24DA52E800233B75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7355D8B224DA52E800233B75 /* PBXTargetDependency */,
+			);
+			name = encryptDemoUITests;
+			productName = encryptDemoUITests;
+			productReference = 7355D8B024DA52E800233B75 /* encryptDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7355D88224DA52E300233B75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "kevin guo";
+				TargetAttributes = {
+					7355D88924DA52E300233B75 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					7355D8A424DA52E800233B75 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 7355D88924DA52E300233B75;
+					};
+					7355D8AF24DA52E800233B75 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 7355D88924DA52E300233B75;
+					};
+				};
+			};
+			buildConfigurationList = 7355D88524DA52E300233B75 /* Build configuration list for PBXProject "encryptDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7355D88124DA52E300233B75;
+			productRefGroup = 7355D88B24DA52E300233B75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7355D88924DA52E300233B75 /* encryptDemo */,
+				7355D8A424DA52E800233B75 /* encryptDemoTests */,
+				7355D8AF24DA52E800233B75 /* encryptDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7355D88824DA52E300233B75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7355D89D24DA52E800233B75 /* LaunchScreen.storyboard in Resources */,
+				7355D89A24DA52E800233B75 /* Assets.xcassets in Resources */,
+				7354D55724F793F7009F16E6 /* LICENSE in Resources */,
+				7355D89824DA52E300233B75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7355D8A324DA52E800233B75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7355D8AE24DA52E800233B75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7355D88624DA52E300233B75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7354D55924F793F7009F16E6 /* core.c in Sources */,
+				7354D55824F793F7009F16E6 /* ref.c in Sources */,
+				7354D55B24F793F7009F16E6 /* argon2.c in Sources */,
+				7355D89524DA52E300233B75 /* ViewController.m in Sources */,
+				7354D58424F89CE9009F16E6 /* EncryptArgon2.m in Sources */,
+				7354D58524F89CE9009F16E6 /* EncryptAES.m in Sources */,
+				7354D55624F793F7009F16E6 /* thread.c in Sources */,
+				7355D8CB24DA595400233B75 /* GTMBase64.m in Sources */,
+				7354D55C24F793F7009F16E6 /* encoding.c in Sources */,
+				7355D88F24DA52E300233B75 /* AppDelegate.m in Sources */,
+				7355D8A024DA52E800233B75 /* main.m in Sources */,
+				7355D89224DA52E300233B75 /* SceneDelegate.m in Sources */,
+				7354D55A24F793F7009F16E6 /* blake2b.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7355D8A124DA52E800233B75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7355D8AA24DA52E800233B75 /* encryptDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7355D8AC24DA52E800233B75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7355D8B524DA52E800233B75 /* encryptDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7355D8A724DA52E800233B75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7355D88924DA52E300233B75 /* encryptDemo */;
+			targetProxy = 7355D8A624DA52E800233B75 /* PBXContainerItemProxy */;
+		};
+		7355D8B224DA52E800233B75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7355D88924DA52E300233B75 /* encryptDemo */;
+			targetProxy = 7355D8B124DA52E800233B75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7355D89624DA52E300233B75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7355D89724DA52E300233B75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7355D89B24DA52E800233B75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7355D89C24DA52E800233B75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7355D8B724DA52E800233B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7355D8B824DA52E800233B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7355D8BA24DA52E800233B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/encryptDemo",
+				);
+				INFOPLIST_FILE = encryptDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/encryptDemo",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.welink.encryptDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7355D8BB24DA52E800233B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/encryptDemo",
+				);
+				INFOPLIST_FILE = encryptDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/encryptDemo",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.welink.encryptDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7355D8BD24DA52E800233B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = encryptDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.welink.encryptDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/encryptDemo.app/encryptDemo";
+			};
+			name = Debug;
+		};
+		7355D8BE24DA52E800233B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = encryptDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.welink.encryptDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/encryptDemo.app/encryptDemo";
+			};
+			name = Release;
+		};
+		7355D8C024DA52E800233B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = encryptDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.welink.encryptDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = encryptDemo;
+			};
+			name = Debug;
+		};
+		7355D8C124DA52E800233B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = encryptDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.welink.encryptDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = encryptDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7355D88524DA52E300233B75 /* Build configuration list for PBXProject "encryptDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7355D8B724DA52E800233B75 /* Debug */,
+				7355D8B824DA52E800233B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7355D8B924DA52E800233B75 /* Build configuration list for PBXNativeTarget "encryptDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7355D8BA24DA52E800233B75 /* Debug */,
+				7355D8BB24DA52E800233B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7355D8BC24DA52E800233B75 /* Build configuration list for PBXNativeTarget "encryptDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7355D8BD24DA52E800233B75 /* Debug */,
+				7355D8BE24DA52E800233B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7355D8BF24DA52E800233B75 /* Build configuration list for PBXNativeTarget "encryptDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7355D8C024DA52E800233B75 /* Debug */,
+				7355D8C124DA52E800233B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7355D88224DA52E300233B75 /* Project object */;
+}
